@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Vulnerability Scanner</title>
+    <style>
+        /* Add your CSS styles here */
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        input { padding: 10px; margin: 10px; }
+        button { padding: 10px 20px; }
+    </style>
+</head>
+<body>
+    <h1>Website Vulnerability Scanner</h1>
+    <form action="/scan" method="post">
+        <input type="text" name="url" placeholder="Enter website URL" required>
+        <button type="submit">Scan</button>
+    </form>
+
+    <h2>Scan Results:</h2>
+    <p>{{ result }}</p>
+</body>
+</html>
